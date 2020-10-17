@@ -1,0 +1,106 @@
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        body {
+            background: #f2f2f2;
+        }
+        
+        nav {
+            background: #1b1b1b;
+        }
+        
+        nav {
+            text-align: center;
+        }
+        
+        nav:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+        
+        nav ul {
+            float: left;
+            list-style: none;
+            margin-left: 100px;
+            position: relative;
+            text-transform: uppercase;
+        }
+        
+        nav ul li {
+            float: left;
+            display: inline;
+            background: #1b1b1b;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            line-height: 70px;
+            font-size: 16px;
+            padding: 8px 15px;
+        }
+        
+        nav ul li a :hover {
+            box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+            border-radius: 30px;
+            transition: .8s;
+        }
+        
+        nav ul ul {
+            position: absolute;
+            top: 120px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .8s;
+            border-top: 3px solid cyan;
+            border-bottom: 3px solid cyan;
+            margin-left: 0px;
+            text-transform: none;
+        }
+        
+        nav ul ul ul {
+            border: 20px;
+        }
+        
+        nav ul li:hover>ul {
+            top: 70px;
+            opacity: .9;
+            visibility: visible;
+        }
+        
+        nav ul ul li {
+            position: relative;
+            margin: 0px;
+            width: 150px;
+            float: none;
+            display: list-item;
+            border-bottom: 1px solid black;
+        }
+        
+        nav ul ul li a {
+            line-height: 50px;
+        }
+        
+        nav ul ul li a:hover {
+            color: red;
+            background: linear-gradient(to right, #0066ff, #66ffff 50%);
+        }
+        /*       */
+        
+        .slideshow {
+            width: 1150px;
+            height: 717px;
+            overflow: hidden;
+            position: relative;
+            top: -72px;
+            left: -231px;
+            transform: translate(20%, 10%);
+            z-index: -999;
+        }
